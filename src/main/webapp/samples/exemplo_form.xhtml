@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+	<ui:composition template="../templates/template_form.xhtml">
+		
+		<ui:define name="page_title">Página de exemplo</ui:define>
+		<ui:define name="form_title">Título do Form</ui:define>
+		<ui:define name="form_description">Descrição do Form</ui:define>
+		
+		<ui:define name="componentes">
+			<li id="li_1">
+				<h:outputLabel value="Texto:" for="elemento1" styleClass="description" />
+				<div>
+					<h:inputText id="elemento1" value="Digite o texto" styleClass="element text medium" maxlength="30"/>
+				</div>
+			</li>
+		</ui:define>
+		
+	</ui:composition>
+	
+</html>

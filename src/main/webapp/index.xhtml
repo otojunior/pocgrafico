@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+	<ui:composition>
+		<div>
+			<h:outputText value="Segue abaixo o gráfico de faixa etária" />
+		</div>
+		<div style="text-align:center">
+			<a4j:mediaOutput id="figura" 
+				element="img" 
+				cacheable="false" 
+				session="true"
+				mimeType="image/png" 
+				createContent="#{geradorGraficoBean.gerarGrafico}"/>
+		</div>
+		
+	</ui:composition>
+	
+</html>

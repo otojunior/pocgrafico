@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+
+<resources>
+	<jdbc-connection-pool name="default_pool"
+		res-type="javax.sql.DataSource" 
+		datasource-classname="org.h2.jdbcx.JdbcDataSource">
+		<property name="User" value="sa"></property>
+		<property name="Password" value="sa"></property>
+		<property name="URL" value="jdbc:h2:mem:default;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1"></property>
+	</jdbc-connection-pool>
+	<jdbc-resource pool-name="default_pool"	jndi-name="java:app/jdbc/pocgrafico-ds"/>
+</resources>
